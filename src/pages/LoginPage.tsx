@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Eye, EyeOff } from 'lucide-react';
+import logoAutomas from '../assets/automaslogo.jpeg';
 
 const LoginPage: React.FC = () => {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ const LoginPage: React.FC = () => {
         <div className="text-center mb-8">
           <div className="flex items-center justify-center space-x-3 mb-4">
             <img 
-              src="/automaslogo.jpeg" 
+              src={logoAutomas}
               alt="Automás Lubricentro" 
               className="h-12 w-12 rounded-full object-cover"
             />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { User, LogOut } from 'lucide-react';
+import logoAutomas from '../assets/automaslogo.jpeg';
 
 interface NavbarProps {
   isAuthenticated?: boolean;
@@ -27,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({ isAuthenticated = false }) => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/automaslogo.jpeg" 
+              src={logoAutomas} 
               alt="Lubricentro Automas Quillota" 
               className="h-10 w-10 rounded-full object-cover"
             />

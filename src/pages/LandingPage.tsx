@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Wrench, Shield, Clock, Star, Phone, Mail, MapPin, Scan, Siren as Tire } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import logoAutomas from '../assets/automaslogo.jpeg';
 
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
@@ -166,7 +167,7 @@ const LandingPage: React.FC = () => {
             </div>
             <div className="bg-primary/10 p-8 rounded-lg flex items-center justify-center">
               <img 
-                src="/automaslogo.jpeg" 
+                src={logoAutomas}
                 alt="Lubricentro Automas Quillota" 
                 className="h-32 w-32 rounded-full object-cover shadow-lg"
               />
@@ -247,7 +248,7 @@ const LandingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
             <img 
-              src="/automaslogo.jpeg" 
+              src={logoAutomas} 
               alt="Lubricentro Automas Quillota" 
               className="h-8 w-8 rounded-full object-cover"
             />
